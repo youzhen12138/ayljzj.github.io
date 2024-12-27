@@ -6,31 +6,6 @@
         <description>Recent content in Tags on 暗影流金的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>暗影流金</copyright>
-        <lastBuildDate>Fri, 27 Dec 2024 13:36:06 +0000</lastBuildDate><atom:link href="https://ayljzj.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Git</title>
-        <link>https://ayljzj.github.io/tags/git/</link>
-        <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayljzj.github.io/tags/git/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>环境</title>
-        <link>https://ayljzj.github.io/tags/%E7%8E%AF%E5%A2%83/</link>
-        <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayljzj.github.io/tags/%E7%8E%AF%E5%A2%83/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>自动推理</title>
-        <link>https://ayljzj.github.io/tags/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/</link>
-        <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayljzj.github.io/tags/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/</guid>
-        <description></description>
-        </item>
-        
+        <copyright>暗影流金</copyright><atom:link href="https://ayljzj.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
