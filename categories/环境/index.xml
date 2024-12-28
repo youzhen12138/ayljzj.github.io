@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 28 Dec 2024 03:50:40 +0000</lastBuildDate><atom:link href="https://ayljzj.github.io/categories/%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Dec 2024 04:14:13 +0000</lastBuildDate><atom:link href="https://ayljzj.github.io/categories/%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>自动推理</title>
         <link>https://ayljzj.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/</link>
         <pubDate>Thu, 26 Dec 2024 00:00:00 +0000</pubDate>
@@ -30,18 +30,45 @@
 2.&lt;a class=&#34;link&#34; href=&#34;#jump3&#34; &gt;相关代码修改（基础项）&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2 id=&#34;span-idjump11-安装系统span&#34;&gt;&lt;span id=&#34;jump1&#34;&gt;1. 安装系统&lt;/span&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;步骤1---启用适用于-linux-的-windows-子系统&#34;&gt;步骤1 - 启用适用于 Linux 的 Windows 子系统：
-&lt;/h3&gt;&lt;p&gt;需要先启用“适用于 Linux 的 Windows 子系统”可选功能，然后才能在 Windows 上安装 Linux 分发。&lt;br&gt;以管理员身份打开 PowerShell 并运行：&lt;br&gt;&lt;code&gt;dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;步骤2---启用虚拟机功能&#34;&gt;步骤2 - 启用虚拟机功能：
+&lt;/h3&gt;&lt;p&gt;需要先启用“适用于 Linux 的 Windows 子系统”可选功能，然后才能在 Windows 上安装 Linux 分发。&lt;br&gt;以管理员身份打开 PowerShell 并运行：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤2---启用虚拟机功能&#34;&gt;步骤2 - 启用虚拟机功能：
 &lt;/h3&gt;&lt;p&gt;安装 WSL 2 之前，必须启用“虚拟机平台”可选功能。 计算机需要虚拟化功能才能使用此功能。&lt;br&gt;
-以管理员身份打开 PowerShell 并运行：&lt;br&gt;
-&lt;code&gt;dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;步骤3---下载-linux-内核更新包&#34;&gt;步骤3 - 下载 Linux 内核更新包：
-&lt;/h3&gt;&lt;p&gt;以管理员身份打开 PowerShell 并运行：&lt;br&gt;
-&lt;code&gt;wsl --install&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;步骤4---将-wsl-2-设置为默认版本&#34;&gt;步骤4 - 将 WSL 2 设置为默认版本：
-&lt;/h3&gt;&lt;p&gt;打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，将 WSL 2 设置为默认版本：&lt;br&gt;
-&lt;code&gt;wsl --set-default-version 2&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;步骤5---安装所选的-linux-分发版&#34;&gt;步骤5 - 安装所选的 Linux 分发版：
+以管理员身份打开 PowerShell 并运行：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤3---下载-linux-内核更新包&#34;&gt;步骤3 - 下载 Linux 内核更新包：
+&lt;/h3&gt;&lt;p&gt;以管理员身份打开 PowerShell 并运行：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wsl --install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤4---将-wsl-2-设置为默认版本&#34;&gt;步骤4 - 将 WSL 2 设置为默认版本：
+&lt;/h3&gt;&lt;p&gt;打开 PowerShell，然后在安装新的 Linux 发行版时运行以下命令，将 WSL 2 设置为默认版本：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wsl --set-default-version 2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;步骤5---安装所选的-linux-分发版&#34;&gt;步骤5 - 安装所选的 Linux 分发版：
 &lt;/h3&gt;&lt;p&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9pjn388hp8c9&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Ubuntu 16.04 LTS&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9N9TNGVNDL3Q&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Ubuntu 18.04 LTS&lt;/a&gt;&lt;br&gt;•	&lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/apps/9n6svws3rx71&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -119,15 +146,59 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;更新镜像&#34;&gt;更新镜像
 &lt;/h3&gt;&lt;p&gt;操作完成后使用如下命令更新镜像：&lt;br&gt;•	&lt;code&gt;sudo apt-get updata&lt;/code&gt; 更新&lt;br&gt;•	&lt;code&gt;sudo apt-get upgrade&lt;/code&gt; 更新&lt;br&gt;&lt;code&gt;sudo add-apt-repository ppa:openjdk-r/ppa&lt;/code&gt;&lt;br&gt;安装jdk：&lt;code&gt;sudo apt-get install openjdk-8-jdk&lt;/code&gt;&lt;br&gt;&lt;br&gt;
-&lt;strong&gt;拓展篇(在环境Ubuntu/Mint物理机上安装python环境)：&lt;/strong&gt;&lt;br&gt;
-&lt;code&gt;ls /usr/bin/python*&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;update-alternatives --list python&lt;/code&gt; &lt;br&gt;
-&lt;code&gt;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;sudo update-alternatives --config python&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;sudo apt install python3-pip&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
+&lt;strong&gt;拓展篇(在环境Ubuntu/Mint物理机上安装python环境)：&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls /usr/bin/python*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;update-alternatives --list python
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo update-alternatives --config python
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install python3-pip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;br&gt;
 &lt;h2 id=&#34;span-idjump33-相关代码修改基础项span&#34;&gt;&lt;span id=&#34;jump3&#34;&gt;3. 相关代码修改（基础项）&lt;/span&gt;
-&lt;/h2&gt;&lt;table&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;基础代码修改项&#34;&gt;基础代码修改项
+&lt;/h3&gt;&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th style=&#34;text-align: left&#34;&gt;&lt;strong&gt;必改项&lt;/strong&gt;&lt;/th&gt;
@@ -193,10 +264,35 @@
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;CSE_E：&lt;code&gt;java -jar mcs_epr.jar CSE_E problems 0 1 4 1 300 0 1 10&lt;/code&gt;&lt;br&gt;
-CSE_V：&lt;code&gt;java -jar mcs_vampire.jar CSE_V problems 0 1 2 1 260 30&lt;/code&gt;&lt;br&gt;
-CSE：&lt;code&gt;java -jar mcs_scs.jar CSE problems 0 1 0 1 1 150&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
-</description>
+&lt;h3 id=&#34;命令行版本测试命令&#34;&gt;命令行版本测试命令
+&lt;/h3&gt;&lt;p&gt;测试CSE和Eprover融合系统命令：&lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar mcs_epr.jar CSE_E problems 0 1 4 1 300 0 1 10
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;测试CSE和Vampire融合系统命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar mcs_vampire.jar CSE_V problems 0 1 2 1 260 30
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;单独测试CSE系统命令：```&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar mcs_scs.jar CSE problems 0 1 0 1 1 150
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
         </item>
         
     </channel>
