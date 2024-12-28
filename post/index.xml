@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>暗影流金</copyright>
-        <lastBuildDate>Sat, 28 Dec 2024 04:48:37 +0000</lastBuildDate><atom:link href="https://ayljzj.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Dec 2024 04:52:55 +0000</lastBuildDate><atom:link href="https://ayljzj.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>git相关操作</title>
         <link>https://ayljzj.github.io/p/git%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
@@ -354,11 +354,11 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;span-idjump43-纠错span&#34;&gt;&lt;span id=&#34;jump4&#34;&gt;3. 纠错&lt;/span&gt;
 &lt;/h2&gt;&lt;h3 id=&#34;错误1证明器不存在&#34;&gt;错误1：证明器不存在
-&lt;/h3&gt;&lt;img src=&#34;./自动推理.assets/错误1/错误1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;
+&lt;/h3&gt;&lt;img src=&#34;./atuo.assets/error1/error1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;
 检查dist文件夹下有没有这个cprover_priority
-&lt;img src=&#34;./自动推理.assets/错误1/解决1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;
+&lt;img src=&#34;./auto.assets/error1/solve1.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;
  若没有那就把cse 改成这个名字，然后再添加可执行权限
- &lt;img src=&#34;./自动推理.assets/错误1/解决2.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;
+ &lt;img src=&#34;./auto.assets/error1/solve2.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;
  ### 错误2：判定异常
  若验证检查结果异常，需记录判定情况，需要记录的有：
 策略：多策略模式下为桌面的strategy文件夹；单策略模式下为strategy.txt文件
@@ -377,7 +377,7 @@
 在别的电脑上调试也能成功
 **解决方法：**
 重装ubuntu系统
- &lt;img src=&#34;./自动推理.assets/错误4/错误4.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;</description>
+ &lt;img src=&#34;./auto.assets/error4/error4.png&#34; width=&#34;50%&#34; align=&#34;center&#34; /&gt;</description>
         </item>
         <item>
         <title>海岛奇兵</title>
