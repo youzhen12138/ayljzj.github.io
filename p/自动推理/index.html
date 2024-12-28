@@ -10,7 +10,7 @@
 <meta property='og:description' content=" “Work. ”\n前言 安装前可以浏览这三个教程：\nwsl安装教程 安装wsl后虚拟机无法启动 原生ubuntu安装教程\n如果想浏览相关的内容，可直接点击下面跳转：\n1.安装系统\n2.修改环境\n3.相关代码修改（基础项）\n4.纠错\n">
 <meta property='og:url' content='https://ayljzj.github.io/p/%E8%87%AA%E5%8A%A8%E6%8E%A8%E7%90%86/'>
 <meta property='og:site_name' content='暗影流金的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-12-28T12:54:15&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-12-26T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-12-28T12:56:55&#43;08:00'/>
 <meta name="twitter:title" content="自动推理">
 <meta name="twitter:description" content=" “Work. ”\n前言 安装前可以浏览这三个教程：\nwsl安装教程 安装wsl后虚拟机无法启动 原生ubuntu安装教程\n如果想浏览相关的内容，可直接点击下面跳转：\n1.安装系统\n2.修改环境\n3.相关代码修改（基础项）\n4.纠错\n">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -291,6 +291,9 @@
     <li><a href="#span-idjump43-纠错span"><span id="jump4">3. 纠错</span></a>
       <ul>
         <li><a href="#错误1证明器不存在">错误1：证明器不存在</a></li>
+        <li><a href="#错误2判定异常">错误2：判定异常</a></li>
+        <li><a href="#错误3格式转换失败">错误3：格式转换失败</a></li>
+        <li><a href="#错误4调试失败一般少见">错误4：调试失败（一般少见）</a></li>
       </ul>
     </li>
   </ul>
@@ -359,7 +362,7 @@
 
 
                 <time>
-                    2024-12-28 12:54
+                    2024-12-28 12:56
                 </time>
             </div>
             <div>
@@ -672,30 +675,31 @@
 </div>
 </div><h2 id="span-idjump43-纠错span"><span id="jump4">3. 纠错</span>
 </h2><h3 id="错误1证明器不存在">错误1：证明器不存在
-</h3><img src="./atuo.assets/error1/error1.png" width="50%" align="center" />
+</h3><p><img src="./atuo.assets/error1/error1.png" width="50%" align="center" /><br>
 检查dist文件夹下有没有这个cprover_priority
-<img src="./auto.assets/error1/solve1.png" width="50%" align="center" />
- 若没有那就把cse 改成这个名字，然后再添加可执行权限
- <img src="./auto.assets/error1/solve2.png" width="50%" align="center" />
- ### 错误2：判定异常
- 若验证检查结果异常，需记录判定情况，需要记录的有：
+<img src="./auto.assets/error1/solve1.png" width="50%" align="center" /><br>
+若没有那就把cse 改成这个名字，然后再添加可执行权限
+<img src="./auto.assets/error1/solve2.png" width="50%" align="center" /><br></p>
+<h3 id="错误2判定异常">错误2：判定异常
+</h3><p>若验证检查结果异常，需记录判定情况，需要记录的有：
 策略：多策略模式下为桌面的strategy文件夹；单策略模式下为strategy.txt文件
 判定过程文件夹：桌面output文件夹下与判定例子同名的文件夹。
-在代码操作中，指针越界
- ### 错误3：格式转换失败
- 可能的原因：
+在代码操作中，指针越界</p>
+<h3 id="错误3格式转换失败">错误3：格式转换失败
+</h3><p>可能的原因：
 1、没有放置公理集Axioms
 2、没有使用Eprover融合系统，没有使用到转换的文件
 3、由于问题的原因，可能无法转换
-4、可能转换成功，但是界面显示错误
- ### 错误4：调试失败（一般少见）
- **问题：**
+4、可能转换成功，但是界面显示错误</p>
+<h3 id="错误4调试失败一般少见">错误4：调试失败（一般少见）
+</h3><p><strong>问题：</strong>
 同样的例子在调试过程中超时导致无法判定
 但是在带界面版本能得到不可满足
 在别的电脑上调试也能成功
-**解决方法：**
+<strong>解决方法：</strong>
 重装ubuntu系统
- <img src="./auto.assets/error4/error4.png" width="50%" align="center" />
+<img src="./auto.assets/error4/error4.png" width="50%" align="center" /><br></p>
+
 </section>
 
 
@@ -712,7 +716,7 @@
 
 
         <span>
-            最后更新于 2024-12-28 12:54
+            最后更新于 2024-12-28 12:56
         </span>
     </section></footer>
 
@@ -780,7 +784,7 @@
         
         
 
-        <p>发布了 7 篇文章 | 共 1938 字</p>
+        <p>发布了 7 篇文章 | 共 1927 字</p>
 
 
 
